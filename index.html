@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <script src="./js/types.js" type="application/javascript"></script>
+    <script src="./js/events.js" type="application/javascript"></script>
+    <script src="./js/index.js" type="application/javascript"></script>
+
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: black;
+         }
+         
+        .canvas-container {
+            position: absolute;
+            z-index: 0;
+        }
+
+        .ui-container {
+            position: absolute;
+            z-index: 100;
+            color: rgb(252, 135, 135);
+            margin: 20px 0 0 30px;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        .score {
+            display: inline;
+            font-family: 'josefin sans';
+            line-height: 1.3em;
+            background-color: rgba(176, 252, 208, 0.178);
+            border-radius: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .menu {
+            text-align: center;
+            width: 200px;
+            padding: 5px;
+            margin-top: 10px;
+            background-color: rgba(176, 252, 208, 0.178);
+            border-radius: 15px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class='canvas-container'>
+        <canvas id='canvas'></canvas>
+    </div>
+    <div class='ui-container'>
+
+        <div class='score'>
+            <span>Score: </span>
+            <span id="score_value">100</span>
+        </div>
+    
+
+        <div 
+        id='restart'
+        class='menu'>
+            ReStart
+        </div>
+
+    </div>
+</body>
+</html>
