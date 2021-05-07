@@ -3,10 +3,11 @@ const player_elevation = 100
 const EnemyBoxPadding  = 10
 
 /* Sprites */
-const rock             = new Image();   rock.src = "./../img/rock.svg";
-const rock2            = new Image();  rock2.src = "./../img/rock2.svg";
-const rocket           = new Image(); rocket.src = "./../img/c_rocket.svg";
+const rock             = new Image();   rock.src = new URL("img/rock.svg", window.location)
+const rock2            = new Image();  rock2.src = new URL("img/rock2.svg", window.location)
+const rocket           = new Image(); rocket.src = new URL("img/c_rocket.svg", window.location)
 
+console.log(location)
 
 /* Callback ID's */
 let enemySpawnerId     = undefined
